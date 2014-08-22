@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "http://yui.yahooapis.com/pure/0.5.0/pure-min.css" %>
+  <%= stylesheet_link_tag "http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="layout" class="pure-g">
+  <div class="sidebar pure-u-1 pure-u-md-1-5">
+    <a class="logo" href="<%= root_path %>">Reza Parang</a>
+    <p class="bio">I'm a developer, product manager, and full time wiseguy.<br /><br />I write here about my projects.</p>
+  </div>
+  <div class="content pure-u-1 pure-u-md-4-5">
+    <%= yield %>
+  </div>
+  <div class="footer pure-u-1">&copy; 2014 Reza Parang - <a href="http://www.twitter.com/RezaParang" target="_blank">Twitter</a></div>
+</div>
+
+</body>
+</html>

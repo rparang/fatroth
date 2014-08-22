@@ -1,0 +1,73 @@
+@import 'variables';
+
+h1 {
+  font-family: "omnes-pro", sans-serif;
+  font-size: 2em;
+  margin: .50em 0 !important;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+}
+
+img {
+  width: 100%;
+  margin: 10px 0 20px 0; 
+}
+
+i {
+  margin: 2em 0 1em 0;
+  font-weight: 300;
+  color: #888;
+  font-size: 14px;
+}
+
+#layout {
+  margin: 35px 50px 50px 50px;
+}
+
+.content {
+  border-top: 2px solid lighten($grayLighter, 10%);
+}
+
+.bio {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 20px 5px 20px 0;
+  color: $grayLight;
+}
+
+.logo {
+  color: $grayDarker;
+  font-family: "omnes-pro", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-left: 5px solid #3d9ad1;
+  padding-left: 9px;
+  font-size: 16px;
+  margin-bottom: 10px !important;
+}
+
+.entry {
+  color: $grayDarker;
+  line-height: 22px;
+  font-family: "proxima-nova", sans-serif;
+  margin: 0 0 40px 0;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 40px;
+}
+
+.footer {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  font-style: italic;
+  color: $grayLighter;
+  margin-top: 30px;
+  a {
+    color: $grayLighter;
+  }
+}
