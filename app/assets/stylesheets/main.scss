@@ -11,6 +11,10 @@ a {
   color: $blue;
 }
 
+a:hover {
+  color: $blueDark;
+}
+
 img {
   width: 100%;
   margin: 10px 0 20px 0; 
@@ -27,6 +31,10 @@ i {
   margin: 35px 50px 50px 50px;
 }
 
+.sidebar-wrapper {
+  margin-right: 10px;
+}
+
 .content {
   border-top: 2px solid lighten($grayLighter, 10%);
 }
@@ -34,7 +42,6 @@ i {
 .bio {
   font-size: 14px;
   line-height: 20px;
-  margin: 20px 5px 20px 0;
   color: $grayLight;
 }
 
@@ -44,10 +51,25 @@ i {
   font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  border-left: 5px solid #3d9ad1;
+  border-left: 5px solid $blue;
   padding-left: 9px;
   font-size: 16px;
+  display: inline-block;
   margin-bottom: 10px !important;
+}
+
+.logo:hover {
+  border-left: 5px solid $blueDark;
+}
+
+.icons{
+  span {
+    color: lighten($grayLight, 10%);
+    font-size: 22px;
+  }
+  span:hover {
+    color: $gray;
+  }
 }
 
 .entry {

@@ -3,7 +3,7 @@
   <div class="entry">
     <h1><a href="<%= entry_path(entry) %>"><%= entry.title %></a></h1>
     <i><%= time_ago_in_words(entry.created_at) %> ago</i>
-    <%= truncate(entry.body, length: 600, escape: false ) %>
+    <%= truncate(entry.body, length: 600, escape: false, separator: ' ' ) %>
   </div>
 
 <% end %>
