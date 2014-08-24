@@ -1,6 +1,9 @@
 class EntriesController < ApplicationController
   before_action :set_entry, only: [:show, :edit, :update, :destroy]
 
+  #Check to see if user has session. References application_controller method
+  before_filter :signed_in_user, :only => [:create, :edit, :update, :destroy]
+
   def index
     @entries = Entry.all
   end

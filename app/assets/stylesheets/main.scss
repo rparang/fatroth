@@ -1,5 +1,9 @@
 @import 'variables';
 
+body {
+  color: $grayDarker;  
+}
+
 h1 {
   font-family: "omnes-pro", sans-serif;
   font-size: 2em;
@@ -40,7 +44,7 @@ i {
 }
 
 .bio {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
   color: $grayLight;
 }
@@ -73,7 +77,6 @@ i {
 }
 
 .entry {
-  color: $grayDarker;
   line-height: 22px;
   font-family: "proxima-nova", sans-serif;
   margin: 0 0 40px 0;
