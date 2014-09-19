@@ -9,6 +9,7 @@
   <%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= render 'layouts/ga' %>
 </head>
 <body>
 
@@ -25,7 +26,7 @@
         <a href="http://www.linkedin.com/in/rezaparang" target="_blank"><span class="fa fa-linkedin-square"></span></a>
         <a href="https://twitter.com/RezaParang" target="_blank"><span class="fa fa-twitter-square"></span></a>
       </div>
-      <p class="bio">I'm a developer, product manager, and full time wiseguy. I occasionally annoy coworkers by playing drums in the office.<br /><br />I write here about my projects.</p>
+      <p class="bio">I'm a developer, product manager, and I occasionally annoy coworkers by playing drums in the office.<br /><br />I write here about my projects.</p>
       <% if current_user %>
         <span style="color: green;"><%= current_user.email %></span>
       <% end %>

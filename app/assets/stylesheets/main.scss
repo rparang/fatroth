@@ -7,6 +7,7 @@ body {
 h1 {
   font-family: "omnes-pro", sans-serif;
   font-size: 2em;
+  line-height: 30px;
   margin: .50em 0 !important;
 }
 
@@ -31,12 +32,21 @@ i {
   font-size: 14px;
 }
 
+blockquote{
+  font-family: "Georgia", serif;
+  color: #666;
+  font-style: italic;
+  line-height: 1.8;
+  border-left: 5px solid #ddd;
+  padding-left: 1.5em;
+}
+
 #layout {
-  margin: 35px 50px 50px 50px;
+  margin: 35px;
 }
 
 .sidebar-wrapper {
-  margin-right: 10px;
+  margin-right: 25px;
 }
 
 .content {
@@ -83,6 +93,17 @@ i {
   border-bottom: 1px dotted #ccc;
   padding-bottom: 40px;
 }
+
+.entry pre {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.entry code, .entry pre {
+  background: lighten($grayLighter, 15%);
+}
+
 
 .footer {
   float: left;
