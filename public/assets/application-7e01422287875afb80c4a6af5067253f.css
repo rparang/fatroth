@@ -32,66 +32,54 @@
   font-style: normal;
   font-weight: 700;
 }
-/* line 3, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 body {
-  color: #666666;
-}
+  color: #666666; }
 
-/* line 7, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 h1 {
   font-family: "omnes-pro", sans-serif;
   font-size: 2em;
-  margin: .50em 0 !important;
-}
+  line-height: 30px;
+  margin: .50em 0 !important; }
 
-/* line 13, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 a {
   text-decoration: none;
-  color: #3d9ad1;
-}
+  color: #3d9ad1; }
 
-/* line 18, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 a:hover {
-  color: #0f6fa8;
-}
+  color: #0f6fa8; }
 
-/* line 22, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 img {
   width: 100%;
-  margin: 10px 0 20px 0;
-}
+  margin: 10px 0 20px 0; }
 
-/* line 27, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 i {
   margin: 2em 0 1em 0;
   font-weight: 300;
   color: #888;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
-/* line 34, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
+blockquote {
+  font-family: "Georgia", serif;
+  color: #666;
+  font-style: italic;
+  line-height: 1.8;
+  border-left: 5px solid #ddd;
+  padding-left: 1.5em; }
+
 #layout {
-  margin: 35px 50px 50px 50px;
-}
+  margin: 35px; }
 
-/* line 38, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 .sidebar-wrapper {
-  margin-right: 10px;
-}
+  margin-right: 25px; }
 
-/* line 42, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 .content {
-  border-top: 2px solid #e6e6e6;
-}
+  border-top: 2px solid #e6e6e6; }
 
-/* line 46, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 .bio {
   font-size: 13px;
   line-height: 20px;
-  color: #888888;
-}
+  color: #888888; }
 
-/* line 52, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 .logo {
   color: #666666;
   font-family: "omnes-pro", sans-serif;
@@ -102,34 +90,32 @@ i {
   padding-left: 9px;
   font-size: 16px;
   display: inline-block;
-  margin-bottom: 10px !important;
-}
+  margin-bottom: 10px !important; }
 
-/* line 65, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 .logo:hover {
-  border-left: 5px solid #0f6fa8;
-}
+  border-left: 5px solid #0f6fa8; }
 
-/* line 70, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 .icons span {
   color: #a2a2a2;
-  font-size: 22px;
-}
-/* line 74, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
+  font-size: 22px; }
 .icons span:hover {
-  color: #777777;
-}
+  color: #777777; }
 
-/* line 79, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
 .entry {
   line-height: 22px;
   font-family: "proxima-nova", sans-serif;
   margin: 0 0 40px 0;
   border-bottom: 1px dotted #ccc;
-  padding-bottom: 40px;
-}
+  padding-bottom: 40px; }
 
-/* line 87, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
+.entry pre {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 14px; }
+
+.entry code, .entry pre {
+  background: #f2f2f2; }
+
 .footer {
   float: left;
   width: 100%;
@@ -137,12 +123,9 @@ i {
   font-size: 11px;
   font-style: italic;
   color: #cccccc;
-  margin-top: 30px;
-}
-/* line 95, /Users/reza/projects/personal/blog/app/assets/stylesheets/main.scss */
-.footer a {
-  color: #cccccc;
-}
+  margin-top: 30px; }
+  .footer a {
+    color: #cccccc; }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -158,4 +141,3 @@ i {
 
 
  */
-
