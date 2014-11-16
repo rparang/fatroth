@@ -35,10 +35,14 @@ i {
 blockquote{
   font-family: "Georgia", serif;
   color: #666;
-  font-style: italic;
-  line-height: 1.8;
+  line-height: 1.4;
   border-left: 5px solid #ddd;
   padding-left: 1.5em;
+  font-size: 14px;
+}
+
+code {
+  font-size: 13px !important;
 }
 
 #layout {
