@@ -3,8 +3,8 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user
 
-  def signed_in_user
-    unless signed_in?
+  def signed_in_user_and_admin
+    unless signed_in? && current_user.admin == true
       flash[:notice] = "Please sign in to do that"
       redirect_to root_url
      end
