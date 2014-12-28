@@ -7,7 +7,7 @@ body {
 h1 {
   font-family: "omnes-pro", sans-serif;
   font-size: 2em;
-  line-height: 30px;
+  line-height: 40px;
   margin: .50em 0 !important;
 }
 
@@ -43,6 +43,17 @@ blockquote{
 
 code {
   font-size: 13px !important;
+  padding: 0 4px;
+}
+
+pre {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+code, pre {
+  background-color: #FDF6E3;
 }
 
 #layout {
@@ -98,17 +109,6 @@ code {
   padding-bottom: 40px;
 }
 
-.entry pre {
-  padding: 10px;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.entry code, .entry pre {
-  background: lighten($grayLighter, 15%);
-}
-
-
 .footer {
   float: left;
   width: 100%;
@@ -119,5 +119,14 @@ code {
   margin-top: 30px;
   a {
     color: $grayLighter;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #layout {
+    margin: 15px;
+  }
+  blockquote {
+    margin: 1em 10px !important;
   }
 }

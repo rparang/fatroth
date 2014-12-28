@@ -6,24 +6,29 @@ class EntriesController < ApplicationController
 
   def index
     @entries = Entry.all
+    @title = "Reza Parang"
+    @description = "I'm a developer, product manager, and I occasionally annoy coworkers by playing drums in the office. I write here about my projects."
   end
 
   def show
+    @entry = Entry.find(params[:id])
+    @title = "#{@entry.title} | Reza Parang"
+    @description = @entry.description
   end
 
   def new
     @entry = Entry.new
   end
-
-  def edit
-  end
-
+  
   def create
     @entry = Entry.new(entry_params)
 
     if @entry.save
       redirect_to root_url, :notice => "Entry was successfully created"
     end
+  end
+
+  def edit
   end
 
   def update
@@ -46,6 +51,6 @@ class EntriesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def entry_params
       # params[:entry]
-      params.require(:entry).permit(:title, :body, :labels, :is_project, :is_paper)
+      params.require(:entry).permit(:title, :body, :description, :labels, :is_project, :is_paper)
     end
 end
