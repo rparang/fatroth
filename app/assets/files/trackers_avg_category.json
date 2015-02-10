@@ -1,0 +1,18 @@
+{"items":
+  [ 
+    { "name": "Shopping", "count": "26.60" },
+    { "name": "Recreation", "count": "33.56" },
+    { "name": "News", "count": "55.42" },
+    { "name": "Business", "count": "11.18" },
+    { "name": "Home", "count": "42.68" },
+    { "name": "Society", "count": "20.88" },
+    { "name": "Computers", "count": "3.42" },
+    { "name": "Reference", "count": "13.61" },
+    { "name": "Sports", "count": "44.50" },
+    { "name": "Science", "count": "12.04" },
+    { "name": "Kids and Teens", "count": "15.44" },
+    { "name": "Arts", "count": "24.71" },
+    { "name": "Games", "count": "48.50" },
+    { "name": "Health", "count": "25.73" }
+  ]
+}

@@ -130,3 +130,11 @@ code, pre {
     margin: 1em 10px !important;
   }
 }
+
+// Refer to http://stackoverflow.com/questions/8564752/good-widths-for-media-queries-on-responsive-site
+
+@media screen and (min-width: 960px) {
+  #layout {
+    width: 960px;
+  }
+}
