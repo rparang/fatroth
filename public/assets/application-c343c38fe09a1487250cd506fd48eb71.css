@@ -168,6 +168,9 @@ code, pre {
 
   blockquote {
     margin: 1em 10px !important; } }
+@media screen and (min-width: 960px) {
+  #layout {
+    width: 960px; } }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
