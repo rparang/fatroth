@@ -6,13 +6,13 @@ class EntriesController < ApplicationController
 
   def index
     @entries = Entry.all
-    @title = "Reza Parang"
-    @description = "I'm a developer, product manager, and I occasionally annoy coworkers by playing drums in the office. I write here about my projects."
+    @title = "The Ultimate Roth IRA Guide | FatRoth"
+    @description = "FathRoth is the central source for Roth IRA eligibility, income requirements, and rules. Free guides and expert advice."
   end
 
   def show
     @entry = Entry.find(params[:id])
-    @title = "#{@entry.title} | Reza Parang"
+    @title = "#{@entry.title} | FatRoth"
     @description = @entry.description
   end
 
