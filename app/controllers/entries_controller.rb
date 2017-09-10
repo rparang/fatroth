@@ -10,8 +10,8 @@ class EntriesController < ApplicationController
     @description = "FathRoth is the central source for Roth IRA eligibility, income requirements, and rules. Free guides and expert advice."
   end
 
+  # The before_action filter is called with set_entry when looking at params
   def show
-    @entry = Entry.find(params[:id])
     @title = "#{@entry.title} | FatRoth"
     @description = @entry.description
   end
@@ -25,7 +25,10 @@ class EntriesController < ApplicationController
 
     if @entry.save
       redirect_to root_url, :notice => "Entry was successfully created"
+    else
+      render 'new'
     end
+
   end
 
   def edit
@@ -43,14 +46,14 @@ class EntriesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    # We are finding entries now by the slug and not the id. It would
+    # be @entry = Entry.find(params[:id]) without using slugs.
     def set_entry
-      @entry = Entry.find(params[:id])
+      @entry = Entry.find_by_slug( params[:id] )
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def entry_params
-      # params[:entry]
-      params.require(:entry).permit(:title, :body, :description, :labels, :is_project, :is_paper)
+      params.require(:entry).permit(:title, :body, :description, :labels, :is_project, :is_paper, :slug)
     end
 end
