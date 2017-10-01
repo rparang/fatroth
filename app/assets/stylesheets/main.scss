@@ -25,6 +25,10 @@ img {
   // margin: 10px 0 20px 0; 
 }
 
+div {
+  // border: 1px solid red;
+}
+
 i {
   margin: 2em 0 1em 0;
   font-weight: 300;
@@ -65,15 +69,29 @@ code, pre {
   background-color: #FDF6E3;
 }
 
+nav {
+  width: 960px;
+  margin: 10px auto;
+}
+
+.nav-container {
+  margin: 14px 0 0 0
+}
+
 #layout {
-  margin: 35px;
+  margin: 0 auto;
 }
 
 .sidebar-wrapper {
-  margin-right: 25px;
+  // margin-right: 25px;
 }
 
 .content {
+
+}
+
+.content-container {
+  margin: 15px 25px 0 0;
   border-top: 2px solid lighten($grayLighter, 10%);
 }
 
@@ -146,12 +164,27 @@ code, pre {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   #layout {
     margin: 15px;
   }
+  .content-container {
+    margin: 0;
+  }
+  .nav-container{
+    margin: 0 15px;
+  }
   blockquote {
     margin: 1em 10px !important;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+  .content-container {
+    margin: 15px;
+  }
+  .nav-container{
+    margin: 0 15px;
   }
 }
 
