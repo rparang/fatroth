@@ -4,10 +4,9 @@
   <title><%= @title || "The Ultimate Roth IRA Guide | FatRoth.com" %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag "http://yui.yahooapis.com/pure/0.5.0/pure-min.css" %>
   <%= stylesheet_link_tag "http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css" %>
-  <%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" %>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <meta name="description" content="<%= @description %>" />
@@ -33,7 +32,7 @@
 <div id="layout" class="pure-g">
 
 <!-- Left col -->
-  <div class="content pure-u-1 pure-u-md-17-24">
+  <div class="content pure-u-md-17-24">
     <div class="content-container">
       <%= yield %>
     </div>
@@ -41,7 +40,7 @@
 <!-- End left -->
 
 <!-- Right col -->
-  <div class="sidebar pure-u-1 pure-u-md-7-24">
+  <div class="sidebar pure-u-md-6-24">
     <div class="sidebar-wrapper">
       <p class="bio"></p>
       <% if current_user %>

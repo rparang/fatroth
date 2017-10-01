@@ -1,5 +1,5 @@
 <div class="entry">
+  <div class="meta"><%= @entry.created_at.strftime("%B %d, %Y") %></div>
   <h1><%= @entry.title %></h1>
-  <i><%= time_ago_in_words(@entry.created_at) %> ago</i>
   <%= raw(@entry.body) %>
 </div>
