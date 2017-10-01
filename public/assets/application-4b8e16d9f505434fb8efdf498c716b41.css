@@ -1,0 +1,169 @@
+.sourceCode .kw {
+  color: #268BD2; }
+
+.sourceCode .dt {
+  color: #268BD2; }
+
+.sourceCode .dv, .sourceCode .bn, .sourceCode .fl {
+  color: #D33682; }
+
+.sourceCode .ch {
+  color: #DC322F; }
+
+.sourceCode .st {
+  color: #2AA198; }
+
+.sourceCode .co {
+  color: #93A1A1; }
+
+.sourceCode .ot {
+  color: #A57800; }
+
+.sourceCode .al {
+  color: #CB4B16;
+  font-weight: bold; }
+
+.sourceCode .fu {
+  color: #268BD2; }
+
+.sourceCode .er {
+  color: #D30102;
+  font-weight: bold; }
+body {
+  color: black; }
+
+h1 {
+  font-family: "Helvetica", sans-serif;
+  line-height: 40px;
+  margin: 30px 0 12px 0 !important;
+  font-size: 36px !important; }
+
+a {
+  text-decoration: none;
+  color: #3d9ad1; }
+
+a:hover {
+  color: #0f6fa8; }
+
+i {
+  margin: 2em 0 1em 0;
+  font-weight: 300;
+  color: #888;
+  font-size: 14px; }
+
+p {
+  margin: 12px 0 12px 0 !important; }
+
+p, li {
+  font-size: 17px;
+  line-height: 25px; }
+
+blockquote {
+  color: #666;
+  line-height: 25px;
+  border-left: 5px solid #00dd61;
+  padding-left: 1.5em;
+  font-size: 16px;
+  margin-left: 4px !important; }
+
+code {
+  font-size: 13px !important;
+  padding: 0 4px; }
+
+pre {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 14px; }
+
+code, pre {
+  background-color: #FDF6E3; }
+
+nav {
+  width: 960px;
+  margin: 10px auto; }
+
+.nav-container {
+  margin: 14px 0 0 0; }
+
+#layout {
+  margin: 0 auto; }
+
+.content-container {
+  margin: 15px 25px 0 0;
+  border-top: 2px solid #e6e6e6; }
+
+.bio {
+  font-size: 13px;
+  line-height: 20px;
+  color: #888888; }
+
+.logo img {
+  width: 160px; }
+
+.icons span {
+  color: #a2a2a2;
+  font-size: 22px; }
+.icons span:hover {
+  color: #777777; }
+
+.entry {
+  line-height: 22px;
+  font-family: "proxima-nova", sans-serif;
+  margin: 0 0 40px 0;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 40px; }
+  .entry img {
+    max-width: 100%; }
+  .entry p.caption {
+    font-size: 12px;
+    color: #777777;
+    font-style: italic;
+    margin-top: 0px !important; }
+
+.footer {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  font-style: italic;
+  color: #cccccc;
+  margin-top: 30px; }
+  .footer a {
+    color: #cccccc; }
+
+@media screen and (max-width: 599px) {
+  #layout {
+    margin: 15px; }
+
+  .content-container {
+    margin: 0; }
+
+  .nav-container {
+    margin: 0 15px; }
+
+  blockquote {
+    margin: 1em 10px !important; } }
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .content-container {
+    margin: 15px; }
+
+  .nav-container {
+    margin: 0 15px; } }
+@media screen and (min-width: 960px) {
+  #layout {
+    width: 960px; } }
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
