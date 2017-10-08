@@ -3,7 +3,7 @@
   <div class="entry">
     <div class="meta"><%= entry.created_at.strftime("%B %d, %Y") %></div>
     <h1><a href="<%= entry_path(entry) %>"><%= entry.title %></a></h1>
-    <%= truncate(entry.body, length: 1400, escape: false, separator: ' ' ) %>
+    <%= truncate(entry.body, length: 900, escape: false, separator: ' ' ) %>
   </div>
 
 <% end %>
