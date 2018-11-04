@@ -219,6 +219,23 @@ table {
     .popular li a:hover {
       background: rgba(255, 81, 19, 0.05); }
 
+.ads img {
+  height: 40px; }
+.ads .header {
+  height: 60px;
+  background: #ff5113 !important;
+  color: white;
+  font-size: 25px; }
+.ads .provider td {
+  width: 25%; }
+.ads .provider a {
+  text-decoration: none;
+  border: none;
+  background: none; }
+.ads .cta {
+  display: inline-block;
+  margin-top: 10px; }
+
 @media screen and (max-width: 599px) {
   #layout {
     margin: 15px; }
