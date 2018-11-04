@@ -5,4 +5,7 @@ class PagesController < ApplicationController
     render xml: data
   end
 
+  def about
+  end
+
 end

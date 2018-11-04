@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   root :to => "entries#index"
 
+  get 'about' => 'pages#about'
+
   resources :entries, :path => '/'
   resources :users
   resources :sessions

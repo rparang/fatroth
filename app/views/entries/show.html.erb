@@ -2,4 +2,5 @@
   <div class="meta"><%= @entry.created_at.strftime("%B %d, %Y") %></div>
   <h1><%= @entry.title %></h1>
   <%= raw(@entry.body) %>
+  <%= render 'layouts/ad' %>
 </div>

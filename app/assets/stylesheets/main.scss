@@ -284,6 +284,35 @@ table {
 
 }
 
+.ads {
+  img {
+    height: 40px;
+  }
+
+  .header {
+    height: 60px;
+    background: $orange !important;
+    color: white;
+    font-size: 25px;
+  }
+
+  .provider {
+    td {
+      width: 25%;
+    }
+    a {
+      text-decoration: none;
+      border: none;
+      background: none;
+    }
+  }
+
+  .cta {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
 
 @media screen and (max-width: 599px) {
   #layout {
