@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   root :to => "entries#index"
 
   get 'about' => 'pages#about'
+  get 'disclaimer' => 'pages#disclaimer'
 
   resources :entries, :path => '/'
   resources :users

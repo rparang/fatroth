@@ -6,6 +6,11 @@ class PagesController < ApplicationController
   end
 
   def about
+  	@title = "About Us | FatRoth"
+  end
+
+  def disclaimer
+  	@title = "Disclaimer | FatRoth"
   end
 
 end
