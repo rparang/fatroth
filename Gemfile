@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "3.0.0"
+
 gem 'turbolinks'
 gem 'bcrypt'
 gem 'rails', '~> 7.0.4'
