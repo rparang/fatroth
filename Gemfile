@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
+#For Heroku, make sure "ruby" is added under PLATFORMS for heroku deployment. You can 
+#do that via bundle lock --add-platform ruby
+
 ruby "3.0.0"
 
 gem 'turbolinks'
 gem 'bcrypt'
-gem 'rails', '~> 7.0.4'
+gem 'rails', '~> 6.1.7'
 gem 'webrick'
 
 group :assets  do
