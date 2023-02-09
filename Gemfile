@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'bcrypt'
 gem 'rails', '~> 6.1.7'
 gem 'webrick'
+gem 'sqlite3', '~> 1.6.0'
 
 group :assets  do
   gem 'sass-rails'
